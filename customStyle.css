@@ -1,0 +1,188 @@
+/* CSSof landing home */
+body{
+    background-color: #DAE0E2;
+}
+
+.fl-heading{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+}
+.addImg{
+    float: right;
+    width: 40%;
+    margin: -66px 38px 1px 1px;
+}
+.card{
+    background-color: #f5f6f7;
+}
+.card-title{
+    font-size: 25px;
+}
+.card-text{
+    font-size: 18px;
+}
+
+
+/* No CSS of landing About Us, CSS in html */
+
+
+/* CSS of Landing Contact */
+body{
+    background-color: #EAF0F1;
+}
+.editForm{
+    float: right;
+    margin: 83px 51px 1px 1px;
+}
+.addSpace{
+    padding: 1px 1px 1px 1px;
+}
+.reshapeImg{
+    width: 40%;
+    float: left;
+    margin: 70px 0px 0px 20px;
+}
+
+/* Footer CSS copied one */
+
+/* SignUp CSS */
+
+.registration-form{
+	padding: 50px 0;
+}
+
+.registration-form form{
+    background-color: #fff;
+    max-width: 600px;
+    margin: auto;
+    padding: 50px 70px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.registration-form .form-icon{
+	text-align: center;
+    background-color: #5891ff;
+    border-radius: 50%;
+    font-size: 40px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 50px;
+    line-height: 100px;
+}
+
+.registration-form .item{
+	border-radius: 20px;
+    margin-bottom: 25px;
+    padding: 7px 20px;
+}
+
+.registration-form .login{
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #5791ff;
+    border: none;
+    color: white;
+    margin-top: 20px;
+}
+
+.forgot{
+    margin: 0px 0px 0px 116px;
+}
+.reset{
+    margin: 0px 0px 0px 116px;
+}
+
+.create-account{
+    border-radius: 15px;
+}
+
+@media (max-width: 576px) {
+    .registration-form form{
+        padding: 50px 20px;
+    }
+
+    .registration-form .form-icon{
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+        line-height: 70px;
+    }
+}
+
+/* Login CSS */
+.LOGIN.registration-form{
+	padding: 50px 0;
+}
+
+.LOGIN.registration-form form{
+    background-color: #fff;
+    max-width: 600px;
+    margin: auto;
+    padding: 50px 70px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.LOGIN.registration-form.form-icon{
+	text-align: center;
+    background-color: #5891ff;
+    border-radius: 50%;
+    font-size: 40px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 50px;
+    line-height: 100px;
+}
+
+.LOGIN.registration-form.item{
+	border-radius: 20px;
+    margin-bottom: 25px;
+    padding: 7px 20px;
+}
+
+.LOGIN.registration-form.login{
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #5791ff;
+    border: none;
+    color: white;
+    margin-top: 20px;
+}
+
+.LOGIN.forgot{
+    margin: 0px 0px 0px 116px;
+}
+.LOGIN.reset{
+    margin: 0px 0px 0px 116px;
+}
+
+@media (max-width: 576px) {
+    .LOGIN .registration-form form{
+        padding: 50px 20px;
+    }
+
+    .LOGIN.registration-form .form-icon{
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+        line-height: 70px;
+    }
+}
+
+.sidebar{
+    position: fixed;
+}
+#more {
+    display: none;
+}

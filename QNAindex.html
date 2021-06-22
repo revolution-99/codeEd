@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ed QNA</title>
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="customStyle.css"/>
+
+  </head>
+  <body>
+    <!-- Navigation bar starts here -->
+    <nav class="navbar navbar-expand-md navbar fixed-top " id="editNav"
+      style="width: 100%; background-color: #ffffff;">
+      <a class="navbar-brand" href="QNAindex.html">EdQNA</a>
+      <a class="navbar-brand" href="mainindex.html" target=" "><i class="fa fa-fw fa-home"></i> Home</a>
+      <a class="navbar-brand" href="#"><i class="fa fa-pencil-square-o"></i>Answer
+        a question</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-nav ml-auto">
+        <form class="form-inline my-2 my-lg-0 ">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search your question" aria-label="Search">
+          <button class="btn btn-outline-primary my-2 my-sm-0" style="color: #3578E5;" type="submit"><i
+            class="fa fa-search"></i></button>
+        </form>
+        <a class="mx-2 navbar-brand" href="#" style="color: #3578E5;"><i class="fa fa-sign-out"></i> Logout</a>
+      </div>
+    </nav>
+    <!-- Sidebar starts here -->
+    <div class="container my-5 row mx-auto">
+      <div class="sidebar pt-3" style="margin-top: 39px;">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+
+              Maths <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Physics
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Chemistry
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Biology
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              History
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Geography
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              English
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Political Science
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Calculs
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Organic Chemistry
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Inorganic Chemistry
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Information Technology
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Ask Question starts here -->
+        <div class="askQuestion">
+          <div class="card" style="margin: 35px 0px 25px 280px; width: 701px;">
+            <h5 class="card-header" style="color: #ca1515;">What is your
+              question?</h5>
+            <div class="card-body">
+              <textarea class="form-control" rows="5" id="postQuestion"
+                placeholder="Post your question here"></textarea>
+                <a href="#" class="fa fa-file-photo-o" style="margin: 12px 0px 0px 50px;">  Add Photo</a>
+              <a href="#" class="btn btn-primary" style="margin: -18px 0px 0px 482px;
+              width: 130px;">Post</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-light section-content" style="width:700px; margin: 20px 0px 0px 280px;">
+          <div class="card-body">
+            <div>
+              <img src="generaluser.png" height="40px" width="40px">
+              <a href="#" class="mx-1  font-weight-bold" style="color: #3578E5;">Sourav Prasad Das</a>
+              <div>
+                <a href="#" class="fa fa-bookmark-o nav-link float-right " style="font-size:19px"
+                  id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false"> Bookmark</a>
+              </div>
+            </div>
+            <p class="font-weight-bold text-danger my-3">
+              What are Newton’s laws?
+            </p>
+            <p>
+              <br>
+              Newton’s first law states that every object will remain at rest or
+              in uniform motion in a straight line unless
+              compelled to change its state by the action of an external force.
+              This is normally taken as the definition of<span id="dots"><br>inertia.
+                Newton’s second law explains how the velocity of an object changes
+                when it is subjected to an external force.
+                The law defines a force to be equal to change in momentum (mass
+                times velocity) per change in time.
+                <br>
+                Newton’s Third Law states that for every action (force) in nature
+                there is an equal and opposite reaction. In
+                other words, if object A exerts a force on object B, then object B
+                also exerts an equal force on object A.</span><span id="more"></span>
+              </span>
+            </p>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+            <div class="card">
+              <img src="img1.jpg">
+            </div>
+            <div class="dropdown-divider"></div>
+            <!-- Place for icons. Anchor tag will be further added for making the icons responsive -->
+            <div class="my-2">
+            <a href="#" class="fa fa-thumbs-o-up mx-5 nav-link" style="margin:
+              12px 0px 0px 50px; font-size:32px; width: 120px;"></a>
+            <a href="#" class="fa fa-edit mx-5 nav-link" style="margin: 12px 0px
+              0px 50px;font-size:32px; width: 120px;"></a>
+            <a href="#" class="fa fa-share mx-5 mx-5 nav-link" style="margin:
+              12px 0px 0px 50px; font-size:32px; width: 120px;"></a>
+            <textarea class="form-control" rows="5" id="postQuestion"
+              placeholder="Write your comment here ..." style="height: 43px;
+              margin: 7px 0px 0px 0px;"></textarea>
+            <div class="card-footer text-muted" style="margin: 12px;">
+              <a href="" style="margin: 0px 0px 0px 242px;">View all comments</a>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <!-- 1st card ends -->
+
+
+        <!-- 2nd card starts -->
+        <div class="card bg-light section-content" style="width:700px; margin: 25px 0px 0px 280px;">
+          <div class="card-body">
+            <div>
+              <img src="generaluser.png" height="40px" width="40px">
+              <a href="#" class="mx-1  font-weight-bold" style="color: #3578E5;">Sourav Prasad Das</a>
+              <div>
+                <a href="#" class="fa fa-bookmark-o nav-link float-right " style="font-size:19px"
+                  id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false"> Bookmark</a>
+              </div>
+            </div>
+            <p class="font-weight-bold text-danger my-3">
+              What are Newton’s laws?
+            </p>
+            <p>
+              <br>
+              Newton’s first law states that every object will remain at rest or
+              in uniform motion in a straight line unless
+              compelled to change its state by the action of an external force.
+              This is normally taken as the definition of<span id="dots"><br>inertia.
+                Newton’s second law explains how the velocity of an object changes
+                when it is subjected to an external force.
+                The law defines a force to be equal to change in momentum (mass
+                times velocity) per change in time.
+                <br>
+                Newton’s Third Law states that for every action (force) in nature
+                there is an equal and opposite reaction. In
+                other words, if object A exerts a force on object B, then object B
+                also exerts an equal force on object A.</span><span id="more"></span>
+              </span>
+            </p>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+            <div class="card">
+              <img src="img1.jpg">
+            </div>
+            <div class="dropdown-divider"></div>
+            <!-- Place for icons. Anchor tag will be further added for making the icons responsive -->
+            <div class="my-2">
+            <a href="#" class="fa fa-thumbs-o-up mx-5 nav-link" style="margin:
+              12px 0px 0px 50px; font-size:32px; width: 120px;"></a>
+            <a href="#" class="fa fa-edit mx-5 nav-link" style="margin: 12px 0px
+              0px 50px;font-size:32px; width: 120px;"></a>
+            <a href="#" class="fa fa-share mx-5 mx-5 nav-link" style="margin:
+              12px 0px 0px 50px; font-size:32px; width: 120px;"></a>
+            <textarea class="form-control" rows="5" id="postQuestion"
+              placeholder="Write your comment here ..." style="height: 43px;
+              margin: 7px 0px 0px 0px;"></textarea>
+            <div class="card-footer text-muted" style="margin: 12px;">
+              <a href="" style="margin: 0px 0px 0px 242px;">View all comments</a>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <!-- 2nd card ends -->
+
+
+      <!-- footer starts .Will change the footer don't worry about it-->
+      <footer class="page-footer font-small blue" style="background-color: white; widows: 100px;;"> 
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+          <a href="">EdGo</a>
+        </div>
+      <!-- footer ends -->
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+    </body>
+</html>
+      

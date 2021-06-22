@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+      />
+    <link rel="stylesheet" href="customStyle.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css"
+      rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navigation bar starts -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top"id="editNav"
+      style="width: 100%; background-color: #ffffff;">
+      <a class="navbar-brand" href="homeindex.html" style="color: #3578E5;">EdGo</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-nav ml-auto">
+        
+        <a class="navbar-brand" href="logInIndex.html" style="color: #3578E5;"><i
+            class="fa fa-power-off"
+            style="font-size:24px"></i> Log in</a>
+        
+      </div>
+    </nav>
+    <!-- ends -->
+    <div class="main" style="margin-top:73px;">
+
+      <div class="registration-form">
+        <form>
+          <div class="form-icon">
+            <span><i class="icon icon-user"></i></span>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control item" id="username"
+              placeholder="Full Name">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control item" id="email"
+              placeholder="Email">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control item" id="phone-number"
+              placeholder="Phone Number">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control item" id="phone-number"
+              placeholder="School / College Name">
+          </div>
+          <div class="form-group">
+            <select class="form-control item" id="exampleFormControlSelect1">
+              <option>Select your category</option>
+              <option>Teacher</option>
+              <option>Student</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control item" id="password"
+              placeholder="Enter your Password">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control item" id="re_password"
+              placeholder="Re-enter your Password">
+          </div>
+          <div class="form-group">
+            <input type="checkbox" name="agree-term" id="agree-term"
+              class="agree-term" />
+            <label for="agree-term" class="label-agree-term">I agree all
+              statements in <a href="#" class="term-service">Terms of service</a></label>
+          </div>
+          <div class="form-group">
+            <a href="mainindex.html">
+              <button type="button" class="btn btn-primary btn-lg btn-block create-account">Create
+                Account</button>
+
+            </a>
+          </div>
+        </form>
+      </div>
+      <footer class="page-footer font-small blue" style="background-color:
+        white;">
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+          <a href="">EdGo</a>
+        </div>
+      </footer>
+    </body>
+  </html>

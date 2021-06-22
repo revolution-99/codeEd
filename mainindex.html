@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdGo</title>
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="customStyle.css" />
+
+  </head>
+  <body>
+    <!-- Navigation bar starts here -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top "
+      id="editNav"
+      style="width: 100%; background-color: #ffffff;">
+      <a class="navbar-brand" href="mainindex.html" style="color: #3578E5;">EdGo</a>
+      <a class="navbar-brand" href="QNAindex.html" style="color: #3578E5;" target=" ">Ed QNA</a>
+      <form class="form-inline my-2 my-lg-0" >
+        <input class="form-control mr-sm-2" type="search" placeholder="Search people,notes, videos etc" aria-label="Search" >
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit" style="color: #3578E5;"><i
+            class="fa fa-search"></i></button>
+      </form>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-nav ml-auto">
+        <a class="navbar-brand" href="mainindex.html" style="color: #3578E5;"><i class="fa fa-fw fa-home" ></i> Home</a>
+        <a class="navbar-brand" href="#connect-card" style="color: #3578E5;"><i class="fa fa-user-plus"
+            style="font-size:24px"></i> Connections</a>
+        <a class="navbar-brand" href="#" style="color: #3578E5;"><i class="fa fa-commenting-o"
+            style="font-size:24px"></i> Inbox</a>
+        <a class="navbar-brand" href="#" style="color: #3578E5;"><i class="fa fa-plus-circle"
+            style="font-size:24px"></i> Access</a>
+        <a class="navbar-brand" href="homeIndex.html" style="color: #3578E5;"><i class="fa fa-power-off"
+            style="font-size:24px"></i> Logout</a>
+
+
+      </div>
+    </nav>
+    <!-- Sidebar starts here -->
+    <!-- <div class="container my-5 row mx-auto"> -->
+    <div class="sidebar pt-3" style="margin: 11px 0px 0px 64px;">
+      <ul class="nav flex-column" style="margin: 0px 0px 0px 28px;">
+        <li class="nav-item">
+          <img
+            src="https://img.icons8.com/color/96/000000/gender-neutral-user.png"
+            style="margin: 0px 0px 0px 24px;">
+          <div style="margin: 0px 0px 0px 28px;">Sanu Chand</div>
+          <div style="margin: 0px 0px 0px 10px;">Student at S.B.H.S</div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profileIndex.html"  style="color: #3578E5;">
+            My Profile
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: #3578E5;">
+            Bookmarks
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="QNAindex.html" target="_blank" style="color: #3578E5;">
+            Ed QNA
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: #3578E5;">
+            Get Trained
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: #3578E5;">
+            Logout
+          </a>
+        </ul>
+      </div>
+
+      <!-- Connection Card starts here -->
+      <div class="connect-card" id="connect-card" style="width: 18rem; margin: 111px 0px 0px
+        1017px;">
+        <div class="card">
+          <div class="card-header">
+            My Connections
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item ">
+              <div class="fa fa-user-circle-o" style="font-size:20px;color:#3c81ff">
+                Balabhadra Chand
+              </div>
+              <div style="font-size: 11px;"> 
+                Teacher at JKBK
+              </div>
+            </li>
+            <li class="list-group-item ">
+              <div class="fa fa-user-circle-o" style="font-size:20px;color:#3c81ff">
+                Deepak Das
+              </div>
+              <div style="font-size: 11px;"> 
+                Student at Ravenshaw
+              </div>
+            </li>
+            <li class="list-group-item ">
+              <div class="fa fa-user-circle-o" style="font-size:20px;color:#3c81ff">
+                Sourav Prasad
+              </div>
+              <div style="font-size: 11px;"> 
+                Teacher at Stewart
+              </div>
+            </li>
+            <li class="list-group-item nav-link"><a href="">View all Connections</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Connection Card ends here -->
+
+      <!-- Inbox dropdown strats here -->
+
+      <div class="btn-group dropup fixed-bottom" style="margin: 220px 0px 0px 1050px; width: 221px; background-color:#f5f6f7;">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Inbox
+        </button>
+        <div class="dropdown-menu" >
+          <a class="dropdown-item" href="#">
+          <div class="font-weight-bold fa fa-user-circle-o" style="font-size:15px;color:#3c81ff"> Subashree Chand</div>
+          <div style="font-size: 11px;">What is a in "F = ma"?</div></a>
+          <a class="dropdown-item" href="#">
+          <div class="font-weight-bold fa fa-user-circle-o" style="font-size:15px;color:#3c81ff"> Ritik R Mohaptra</div>
+          <div style="font-size: 11px;">What about today's exam?</div></a>
+          <a class="dropdown-item" href="#">
+          <div class="font-weight-bold fa fa-user-circle-o" style="font-size:15px;color:#3c81ff"> Rasmhmi Ranjan Panda</div>
+          <div style="font-size: 11px;">Hii</div></a>
+        </div>
+      </div>
+      <!-- Inbox dropdown ends here -->
+
+      <!-- Ask Question starts here -->
+      <div class="startPost allignn">
+        <div class="card" style="margin: -293px 0px 25px 281px;width: 690px; height: 225px;">
+          <h5 class="card-header" style="color: #3578E5;">Share something here</h5>
+          <div class="card-body">
+            <textarea class="form-control" rows="5" id="writePost"
+              placeholder="Write your post here..." style="height: 86px;"></textarea>
+            <div class="row postSize">
+              <a href="#" class="fa fa-file-photo-o nav-link" style="margin:
+                12px 0px 0px 50px;"> Add Photo</a>
+              <a href="#" class="fa fa-toggle-right nav-link" style="margin:
+                12px 0px 0px 50px;"> Add Video</a>
+              <a href="#" class="fa fa-link nav-link" style="margin: 12px 0px
+                0px 50px;"> Add Link</a>
+            </div>
+            <a href="#" class="btn btn-primary" style="margin: -56px 0px 0px
+              517px;
+              width: 130px;">Post</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Post Card Starts here -->
+      <div class="allignn">
+        <div class="card bg-light section-content" style="width:690px; margin:
+          0px 0px 0px 281px">
+          <div class="card-body">
+            <div>
+              <img src="generaluser.png" height="40px" width="40px">
+              <a href="#" class="mx-1  font-weight-bold" style="color: #3578E5;">Debi Prasad Behera</a>
+              <div class="dropdown">
+                <a href="#" class="fa fa-bookmark-o nav-link float-right
+                  dropdown-toggle" style="font-size:19px"
+                  id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false"> Save</a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Physics</a>
+                  <a class="dropdown-item" href="#">Chemistry</a>
+                  <a class="dropdown-item" href="#">Biology</a>
+                  <a class="dropdown-item" href="#">Mathematics</a>
+                </div>
+              </div>
+
+            </div>
+            <p class=" my-3" style="font-family:Verdana, Geneva, Tahoma, sans-serif">
+              Solution of H. C. Verma Solution - Chapter 5, Question 38 (The Monkey Problem)
+            </p>
+            
+          <div class="card">
+            <video style="height: 400px;" controls>
+              <source src="H. C. Verma Solution - Chapter 5, Question 38 (The Monkey Problem).mp4" type="video/mp4">
+              <source src="movie.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="dropdown-divider"></div>
+          <!-- Place for icons. Anchor tag will be further added for making the icons responsive -->
+          <div class="my-2">
+            <a onclick="likeFunction(this)" class="fa fa-thumbs-up mx-5 nav-link" style="margin: 12px 0px 0px 50px;font-size:32px; width: 110px;"></a>
+            <a href="#" class="fa fa-edit mx-5 nav-link" style="margin: 12px 0px
+              0px 50px;font-size:32px; width: 110px;"></a>
+            <a href="#" class="fa fa-share mx-5 mx-5 nav-link" style="margin:
+              12px 0px 0px 50px; font-size:32px; width: 110px;"></a>
+            <textarea class="form-control" rows="5" id="postQuestion"
+              placeholder="Write your comment here ..." style="height: 43px;
+              margin: 7px 0px 0px 0px;"></textarea>
+            <div class="card-footer text-muted" style="margin: 12px;">
+              <a href="" style="margin: 0px 0px 0px 242px;">View all comments</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2ndPost Card Starts here -->
+      <div class="allignn">
+        <div class="card bg-light section-content" style="width:690px; margin:
+          40px 0px 0px 281px">
+          <div class="card-body">
+            <div>
+              <img src="generaluser.png" height="40px" width="40px">
+              <a href="#" class="mx-1 text-dark font-weight-bold">Sourav Prasad
+                Das</a>
+              <div class="dropdown">
+                <a href="#" class="fa fa-bookmark-o nav-link float-right
+                  dropdown-toggle" style="font-size:19px"
+                  id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false"> Save</a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Physics</a>
+                  <a class="dropdown-item" href="#">Chemistry</a>
+                  <a class="dropdown-item" href="#">Biology</a>
+                  <a class="dropdown-item" href="#">Mathematics</a>
+                </div>
+              </div>
+
+            </div>
+            <p class="font-weight-bold text-danger my-3">
+              What are Newton’s laws?
+            </p>
+            <p>
+              <br>
+              Newton’s first law states that every object will remain at rest or
+              in uniform motion in a straight line unless
+              compelled to change its state by the action of an external force.
+              This is normally taken as the definition of<span id="dots"><br>inertia.
+                Newton’s second law explains how the velocity of an object
+                changes
+                when it is subjected to an external force.
+                The law defines a force to be equal to change in momentum (mass
+                times velocity) per change in time.
+                <br>
+                Newton’s Third Law states that for every action (force) in
+                nature
+                there is an equal and opposite reaction. In
+                other words, if object A exerts a force on object B, then object
+                B
+                also exerts an equal force on object A.</span><span id="more"></span>
+            </span>
+          </p>
+          <button onclick="myFunction()" id="myBtn">Read more</button>
+          <div class="card">
+            <img src="newton's law1.jpg">
+          </div>
+          <div class="dropdown-divider"></div>
+          <!-- Place for icons. Anchor tag will be further added for making the icons responsive -->
+          <div class="my-2">
+            <a href="#" class="fa fa-thumbs-o-up mx-5 nav-link" style="margin:
+              12px 0px 0px 50px; font-size:32px; width: 120px;"></a>
+            <a href="#" class="fa fa-edit mx-5 nav-link" style="margin: 12px 0px
+              0px 50px;font-size:32px; width: 120px;"></a>
+            <a href="#" class="fa fa-share mx-5 mx-5 nav-link" style="margin:
+              12px 0px 0px 50px; font-size:32px; width: 120px;"></a>
+            <textarea class="form-control" rows="5" id="postQuestion"
+              placeholder="Write your comment here ..." style="height: 43px;
+              margin: 7px 0px 0px 0px;"></textarea>
+            <div class="card-footer text-muted" style="margin: 12px;">
+              <a href="" style="margin: 0px 0px 0px 242px;">View all comments</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- card block ends -->
+    <!-- footer strats -->
+    <footer class="page-footer font-small blue" style="background-color: white;"> 
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="">EdGo</a>
+          <!-- Have a question? 
+        <a href="">Ask here</a>
+        New to EdGo ?
+        <a href=""> SignUp here</a> -->
+      </div>
+     
+    
+    </footer>
+    <!-- footer ends -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

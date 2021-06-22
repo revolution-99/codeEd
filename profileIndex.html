@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8" />
+     <meta
+       name="viewport"
+       content="width=device-width, initial-scale=1, shrink-to-fit=no"
+     />
+     <!-- Bootstrap CSS -->
+     <link
+       rel="stylesheet"
+       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+       crossorigin="anonymous"
+     />
+     <link rel="stylesheet" href="../public/css/styles.css" />
+     <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <title>ProfilePage</title>
+</head>
+<body class="bg-light">
+  <!-- Nav bar Starts -->
+  <nav class="navbar navbar-expand-md navbar-light fixed-top "
+      id="editNav"
+      style="width: 100%; background-color: #ffffff;">
+      <a class="navbar-brand" href="#" style="color: #3578E5;">EdGo</a>
+      <a class="navbar-brand" href="#" style="color: #3578E5;">Ed QNA</a>
+      <form class="form-inline my-2 my-lg-0" >
+        <input class="form-control mr-sm-2" type="search" placeholder="Search people,notes, videos etc" aria-label="Search" >
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit" style="color: #3578E5;"><i
+            class="fa fa-search"></i></button>
+      </form>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-nav ml-auto">
+        <a class="navbar-brand" href="#" style="color: #3578E5;"><i class="fa fa-fw fa-home" ></i> Home</a>
+        <a class="navbar-brand" href="#" style="color: #3578E5;"><i class="fa fa-user-plus"
+            style="font-size:24px"></i> Connections</a>
+        <a class="navbar-brand" href="#" style="color: #3578E5;"><i class="fa fa-commenting-o"
+            style="font-size:24px"></i> Inbox</a>
+        <a class="navbar-brand" href="#" style="color: #3578E5;"><i class="fa fa-plus-circle"
+            style="font-size:24px"></i> Access</a>
+        <a class="navbar-brand" href="#" style="color: #3578E5;"><i class="fa fa-power-off"
+            style="font-size:24px"></i> Logout</a>
+
+
+      </div>
+    </nav>
+    <!-- profilepage of the user starts -->
+    <div class="container-fluid my-4">
+      <div class="row">
+        <div class="col-md-5 mx-auto" style="margin:75px 0px 0px 0px;">
+          <div>
+            <div>
+              <div class="row">
+                <div class="col">
+                  <center>
+                    <img width="100px" src="generaluser.png"/>
+                  </center>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <center>
+                    <h4 style="color: #3578E5;">Your Profile</h4>
+                    <span class="font-weight-bold" style="color: #3578E5;">Account Status: STUDENT</span>
+                    <asp:Label
+                      class="badge badge-pill badge-info"
+                      ID="Label1"
+                      runat="server"
+                      Text="Your status"
+                    ></asp:Label>
+                  </center>
+                </div>
+              </div>
+              <form>
+                <div class="form-group">
+                  <label for="inputAddress">Full Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputAddress"
+                    placeholder="Sourav Prasad Das"
+                  />
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="inputEmail4"
+                      placeholder="sourav143@gmail.com"
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Contact No.</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="inputPassword4"
+                      placeholder="9867272723"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress2">Position Responsibilty</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputAddress2"
+                    placeholder="Asst. Professor"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">School / College Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputAddress"
+                    placeholder="Veer Surendra Sai University of Technology, Burla"
+                  />
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">Update</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- profilepage of the user ends -->
+    <!-- Bookmarks starts -->
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div><h2>BOOKMARKS <hr class="new4"></h2><br></div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+              <div class="card-body">
+                <h5 class="card-title">Physics</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group mx-auto">
+                    <button type="button" class="btn btn-primary" style="width:100px">View</button>
+                  </div>
+                  <div class="btn-group mx-auto">
+                    <button type="button" class="btn btn-danger" style="width:100px">Delete</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+              <div class="card-body">
+                <h5 class="card-title">Mathematics</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group mx-auto">
+                    <button type="button" class="btn btn-primary" style="width:100px">View</button>
+                  </div>
+                  <div class="btn-group mx-auto">
+                    <button type="button" class="btn btn-danger" style="width:100px">Delete</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+              <div class="card-body">
+                <h5 class="card-title">Biology</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group mx-auto">
+                    <button type="button" class="btn btn-primary" style="width:100px">View</button>
+                  </div>
+                  <div class="btn-group mx-auto">
+                    <button type="button" class="btn btn-danger" style="width:100px">Delete</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+              <div class="card-body">
+                <h5 class="card-title">Chemistry</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group mx-auto">
+                    <button type="button" class="btn btn-primary" style="width:100px">View</button>
+                  </div>
+                  <div class="btn-group mx-auto">
+                    <button type="button" class="btn btn-danger" style="width:100px">Delete</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+              <div class="card-body">
+                <h5 class="card-title">Physics</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group mx-auto">
+                    <button type="button" class="btn btn-primary" style="width:100px">View</button>
+                  </div>
+                  <div class="btn-group mx-auto">
+                    <button type="button" class="btn btn-danger" style="width:100px">Delete</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+              <div class="card-body">
+                <h5 class="card-title">Mathematics</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group mx-auto">
+                    <button type="button" class="btn btn-primary" style="width:100px">View</button>
+                  </div>
+                  <div class="btn-group mx-auto">
+                    <button type="button" class="btn btn-danger" style="width:100px">Delete</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bookmars starts -->
+
+    <!-- posts starts -->
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div><h2>POSTS <hr class="new4"></h2><br></div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <svg
+                    class="bd-placeholder-img card-img-top"
+                    width="100%"
+                    height="225"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMidYMid slice"
+                    focusable="false"
+                    role="img"
+                    aria-label="Placeholder: Thumbnail"
+                  >
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                  </svg>
+                  <div class="card-body">
+                    <h5 class="card-title">Mathematics</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a natural
+                      lead-in to additional content. This content is a little bit
+                      longer.
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group mx-auto">
+                        <button type="button" class="btn btn-primary" style="width:100px">View</button>
+                      </div>
+                      <div class="btn-group mx-auto">
+                        <button type="button" class="btn btn-danger" style="width:100px">Delete</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <svg
+                    class="bd-placeholder-img card-img-top"
+                    width="100%"
+                    height="225"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMidYMid slice"
+                    focusable="false"
+                    role="img"
+                    aria-label="Placeholder: Thumbnail"
+                  >
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                  </svg>
+                  <div class="card-body">
+                    <h5 class="card-title">Mathematics</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a natural
+                      lead-in to additional content. This content is a little bit
+                      longer.
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group mx-auto">
+                        <button type="button" class="btn btn-primary" style="width:100px">View</button>
+                      </div>
+                      <div class="btn-group mx-auto">
+                        <button type="button" class="btn btn-danger" style="width:100px">Delete</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <svg
+                    class="bd-placeholder-img card-img-top"
+                    width="100%"
+                    height="225"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMidYMid slice"
+                    focusable="false"
+                    role="img"
+                    aria-label="Placeholder: Thumbnail"
+                  >
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                  </svg>
+                  <div class="card-body">
+                    <h5 class="card-title">Mathematics</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a natural
+                      lead-in to additional content. This content is a little bit
+                      longer.
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group mx-auto">
+                        <button type="button" class="btn btn-primary" style="width:100px">View</button>
+                      </div>
+                      <div class="btn-group mx-auto">
+                        <button type="button" class="btn btn-danger" style="width:100px">Delete</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <svg
+                    class="bd-placeholder-img card-img-top"
+                    width="100%"
+                    height="225"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMidYMid slice"
+                    focusable="false"
+                    role="img"
+                    aria-label="Placeholder: Thumbnail"
+                  >
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                  </svg>
+                  <div class="card-body">
+                    <h5 class="card-title">Mathematics</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a natural
+                      lead-in to additional content. This content is a little bit
+                      longer.
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group mx-auto">
+                        <button type="button" class="btn btn-primary" style="width:100px">View</button>
+                      </div>
+                      <div class="btn-group mx-auto">
+                        <button type="button" class="btn btn-danger" style="width:100px">Delete</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <svg
+                    class="bd-placeholder-img card-img-top"
+                    width="100%"
+                    height="225"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMidYMid slice"
+                    focusable="false"
+                    role="img"
+                    aria-label="Placeholder: Thumbnail"
+                  >
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                  </svg>
+                  <div class="card-body">
+                    <h5 class="card-title">Mathematics</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a natural
+                      lead-in to additional content. This content is a little bit
+                      longer.
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group mx-auto">
+                        <button type="button" class="btn btn-primary" style="width:100px">View</button>
+                      </div>
+                      <div class="btn-group mx-auto">
+                        <button type="button" class="btn btn-danger" style="width:100px">Delete</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <svg
+                    class="bd-placeholder-img card-img-top"
+                    width="100%"
+                    height="225"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMidYMid slice"
+                    focusable="false"
+                    role="img"
+                    aria-label="Placeholder: Thumbnail"
+                  >
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                  </svg>
+                  <div class="card-body">
+                    <h5 class="card-title">Mathematics</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a natural
+                      lead-in to additional content. This content is a little bit
+                      longer.
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group mx-auto">
+                        <button type="button" class="btn btn-primary" style="width:100px">View</button>
+                      </div>
+                      <div class="btn-group mx-auto">
+                        <button type="button" class="btn btn-danger" style="width:100px">Delete</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+         
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- posts ends -->
+    <!-- footer starts -->
+    <footer class="page-footer font-small blue" style="background-color: white;"> 
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="">EdGo</a>
+      </div>
+     </footer>
+    <!-- footer ends -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+
+
+
